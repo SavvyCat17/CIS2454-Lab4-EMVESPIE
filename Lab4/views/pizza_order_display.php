@@ -1,7 +1,4 @@
 <?php
-    global $pizza_size;
-    global $toppings_string;
-    global $total_cost;
     
     //Displays user's recent pizza order with size, toppings, and total cost    
     echo '<h2>Your Previous Order</h2>'
