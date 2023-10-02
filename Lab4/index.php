@@ -37,7 +37,7 @@
                 
                 $total_cost = get_cost($pizza_size, $topping_count);
                 
-                display_order($pizza_size, $toppings_string, $total_cost);
+                include('views/pizza_order_display');
             
             //if the user clicks submit without selecting a pizza size,
             //display an error
