@@ -10,9 +10,6 @@
             //file containing pizza order calculations
             require_once('model/calculate_order.php');
             
-            //file with html for displaying the user's order
-            require_once('views/pizza_order_display.php');
-            
             //loading varaibles from pizza order form submission
             $pizza_size = filter_input(INPUT_POST, 'pizza_size');
             $pizza_toppings = filter_input(INPUT_POST, 'pizza_toppings',
@@ -37,7 +34,7 @@
                 
                 $total_cost = get_cost($pizza_size, $topping_count);
                 
-                include('views/pizza_order_display');
+                include('views/pizza_order_display.php');
             
             //if the user clicks submit without selecting a pizza size,
             //display an error
@@ -48,6 +45,7 @@
             
             //display order form
             include('views/pizza_order_form.html');
+            
         ?>
     </body>
 </html>
